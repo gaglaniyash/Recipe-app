@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mui/material@5.11.15/umd/material-ui.production.min.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h4>Recipe App</h4>
+        <br>
+        <div>
+            <input type="text" id="searchBox" placeholder="Search for recipes">
+            <button class="btn waves-effect waves-light" id="searchBtn">Search</button>
+        </div>
+    </header>
+    <main>
+        <div class="recipe-container" id="recipeContainer">
+            <h5>Search for your favorite recipes</h5>
+        </div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="recipeModal">
+        <div class="modal-header">
+            <h2 id="modalTitle"></h2>
+            <button class="close-modal" id="closeModal">Close</button>
+        </div>
+        <div class="modal-body">
+            <p id="modalInstructions"></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mui/material@5.11.15/umd/material-ui.production.min.js" defer></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

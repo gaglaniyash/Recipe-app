@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+#searchBox {
+    width: 50%;
+}
+
+#searchBtn {
+    margin-left: 10px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recipe {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.recipe h3 {
+    font-size: 18px;
+}
+
+.recipe img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.recipe p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.view-recipe {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #28a745;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-recipe:hover {
+    background-color: #218838;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%!important;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.modal-body {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.modal-body p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.close-modal {
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.close-modal:hover {
+    background: darkred;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6)!important; /* Light gray transparency */
+    z-index: 999;
+}
